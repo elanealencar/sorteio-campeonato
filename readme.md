@@ -17,7 +17,7 @@ Este projeto é uma aplicação web desenvolvida utilizando HTML, Javascript e T
 - **JavaScript (ES6+)**: Lógica de sorteio e manipulação de estados.
 
 ## Prévia do Projeto
-- ![Imagem](assets/print.png)
+- ![Imagem](assets/print_sorteador.png)
 
 
 ## Como Executar o Projeto
