@@ -16,6 +16,10 @@ Este projeto é uma aplicação web desenvolvida utilizando HTML, Javascript e T
 - **Tailwind CSS**: Framework para estilização rápida e responsiva.
 - **JavaScript (ES6+)**: Lógica de sorteio e manipulação de estados.
 
+## Prévia do Projeto
+- ![Imagem](assets/print.png)
+
+
 ## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
