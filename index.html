@@ -19,14 +19,13 @@
                 <h1 class="text-2xl font-bold text-blue-800 mb-4 bowlby-one">II COPA TOK</h1>
                 <h2 class="text-2xl font-bold text-blue-500 mb-6 inter">21, 22 e 23 de março</h2>
             </div>
-            <div class="w-40 h-40 flex items-center justify-center border-4 border-orange-500 rounded-full overflow-hidden mb-4 md:h-50 md:w-60">
-                <img src="assets/tok_logo.jpg" alt="Logo Arena Tok de Bola" class="w-full h-full object-cover">
-            </div>
+            <div class="w-40 h-40 flex items-center justify-center border-4 border-orange-500 rounded-full overflow-hidden mb-4 md:h-50 md:w-60 bg-cover bg-center" style="background-image: url('assets/tok_logo.jpg');">
+            </div>            
         </div>
         
         
         <label for="categoria" class="block text-lg font-bold text-blue-500">Escolha a categoria:</label>
-            <select id="categoria" class="w-2/3 p-2 border rounded mb-4 text-center">
+            <select id="categoria" class="w-full p-2 border rounded mb-4 text-center">
                 <option value="aprendiz">Aprendiz</option>
                 <option value="masculino-iniciante">Masculino Iniciante</option>
                 <option value="masculino-intermediario">Masculino Intermediário</option>
@@ -35,10 +34,10 @@
             </select>
         <!-- Entrada da quantidade de duplas -->
          <div>
-            <label for="quantidadeDuplas" class="text-lg font-bold text-blue-500">Digite a quantidade de duplas participantes:</label>
+            <label for="quantidadeDuplas" class="text-lg font-bold text-blue-500">Quantidade de duplas participantes:</label>
          </div>
         <input id="quantidadeDuplas" type="number" 
-            class="w-2/3 h-12 p-2 border rounded mb-4 text-center" 
+            class="w-full h-12 p-2 border rounded mb-4 text-center" 
             placeholder="quantidade">
         <button id="gerarDuplas" 
             class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
