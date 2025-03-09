@@ -54,4 +54,4 @@ Contribuições são bem-vindas! Para contribuir:
 5. Abra um Pull Request.
 
 ## Licença
-Este projeto foi desenvolvido por [Elane Alencar](https://linkedin.com/in/elanealencar) para a empresa Arena [Tok de Bola](https://www.instagram.com/arenatokdebola/).
+Este projeto foi desenvolvido por [Elane Alencar](https://linkedin.com/in/elanealencar) para a empresa [Arena Tok de Bola](https://www.instagram.com/arenatokdebola/).
