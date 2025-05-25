@@ -104,7 +104,7 @@ document.getElementById("sortearDupla").addEventListener("click", function() {
          setTimeout(() => {
             clearInterval(sorteioInterval);
             let duplaSorteada = duplasDisponiveis.shift(); // Remove a dupla sorteada da lista de disponíveis
-            sorteioDisplay.textContent = `${duplaSorteada} 🎉`;
+            sorteioDisplay.textContent = `${duplaSorteada}`;
 
 
             // Adiciona a dupla à lista de sorteados

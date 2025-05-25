@@ -13,61 +13,33 @@
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-6">
     <div class="bg-white p-6 flex flex-col items-center rounded-lg shadow-lg text-center w-full max-w-md">
-        <div class="flex flex-col items-center border-b-2 border-orange-500 mb-6 md:flex-row">
-            <div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-4 bowlby-one">Sorteador de Duplas</h1>
-                <h1 class="text-2xl font-bold text-blue-800 mb-4 bowlby-one">II COPA TOK</h1>
-                <h2 class="text-2xl font-bold text-blue-500 mb-6 inter">21, 22 e 23 de março</h2>
-            </div>
-            <div class="w-40 h-40 flex items-center justify-center border-4 border-orange-500 rounded-full overflow-hidden mb-4 md:h-50 md:w-60 bg-cover bg-center" style="background-image: url('assets/tok_logo.jpg');">
+
+        <div class="flex flex-col items-center border-b-2 border-orange-500 mb-6 md:flex-col">
+            <div class="w-40 h-40 flex items-center justify-center border-4 border-orange-500 rounded-full overflow-hidden mb-4 md:h-50 md:w-50 bg-cover bg-center" style="background-image: url('assets/tok_logo.jpg');">
             </div>            
+            <div>
+                <h1 class="text-3xl font-bold text-blue-500 mb-4 bowlby-one">Sorteador de Duplas</h1>
+                <h4 class="text-3xl font-bold text-blue-500 mb-4 inter">Escolha o campeonato:</h4>
+            </div>
         </div>
+        <a href="indexfeminino.html" class="h-50 w-[80%] flex flex-col m-4 p-8 items-center justify-center border-4 border-blue-400 bg-blue-100 shadow-lg rounded-3xl cursor-pointer">
+            <h1 class="text-2xl font-bold text-blue-400 mb-4 bowlby-one">TOK DELAS</h1>
+            <h2 class="text-2xl font-bold text-blue-400 mb-6 inter">01 de junho</h2>
+            <svg class="w-8 h-8 text-blue-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+        </a>
         
-        
-        <label for="categoria" class="block text-lg font-bold text-blue-500">Escolha a categoria:</label>
-            <select id="categoria" class="w-full p-2 border rounded mb-4 items-center text-center">
-                <option value="aprendiz">Aprendiz</option>
-                <option value="masculino-iniciante">Masculino Iniciante</option>
-                <option value="masculino-intermediario">Masculino Intermediário</option>
-                <option value="misto-iniciante">Misto Iniciante</option>
-                <option value="misto-intermediario">Misto Intermediário</option>
-            </select>
-        <!-- Entrada da quantidade de duplas -->
-         <div>
-            <label for="quantidadeDuplas" class="text-lg font-bold text-blue-500">Digite a quantidade de duplas participantes:</label>
-         </div>
-        <input id="quantidadeDuplas" type="number" 
-            class="w-full h-12 p-2 border rounded mb-4 text-center" 
-            placeholder="quantidade">
-        <button id="gerarDuplas" 
-            class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-            Definir nomes das duplas
-        </button>
-
-        <!-- Área onde os inputs serão inseridos -->
-        <div id="inputsContainer" class="mt-4"></div>
-
-        <!-- Botão para sortear as duplas -->
-        <button id="sortearDupla" 
-            class="hidden w-full bg-green-500 text-white px-4 py-2 rounded mt-4 hover:bg-green-600">
-            SORTEAR DUPLA 1
-        </button>
-
-        
-        <div id="sorteioRapido" class="text-center text-lg font-bold my-4"></div>
-
-
-        <!-- Lista das duplas sorteadas -->
-        <ul id="listaDuplas" class="mt-4 text-left"></ul>
-        <button id="novoSorteio" class="hidden bg-red-500 text-white p-2 rounded mt-4">Fazer novo sorteio</button>
-
+        <a href="indexmasculino.html" class="h-50 w-[80%] flex flex-col p-8 items-center justify-center border-4 border-blue-800 bg-blue-100 shadow-lg rounded-3xl cursor-pointer">
+            <h1 class="text-2xl font-bold text-blue-800 mb-4 bowlby-one">II COPA TOK</h1>
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 inter">21, 22 e 23 de março</h2>
+            <svg class="w-8 h-8 text-blue-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+        </a>
+    
     </div>
-
-    
-    <div id="sorteioDisplay" class="text-xl font-bold text-blue-500 mb-4"></div>
-
-    
-
+        
 
     <script src="script.js"></script>
 </body>

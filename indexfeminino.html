@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTEIO PARA O CAMPEONATO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-6">
+    <div class="bg-white p-6 flex flex-col items-center rounded-lg shadow-lg text-center w-full max-w-md">
+        <div class="flex flex-col items-center border-b-2 border-orange-500 mb-6 md:flex-row">
+            <div>
+                <h1 class="text-3xl font-bold text-blue-500 mb-4 bowlby-one">Sorteador de Duplas</h1>
+                <h1 class="text-2xl font-bold text-blue-400 mb-4 bowlby-one">COPA TOK DELAS</h1>
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 inter">01 de junho de 2025</h2>
+            </div>
+            <div class="w-40 h-40 flex items-center justify-center border-4 border-orange-500 rounded-full overflow-hidden mb-4 md:h-50 md:w-60 bg-cover bg-center" style="background-image: url('assets/tok_logo.jpg');">
+            </div>            
+        </div>
+        
+        
+        <label for="categoria" class="block text-lg font-bold text-blue-500">Escolha a categoria:</label>
+            <select id="categoria" class="w-full p-2 border rounded mb-4 items-center text-center">
+                <option value="iniciante">Feminino Iniciante</option>
+                <option value="Feminino-B-C">Feminino B + C</option>
+            </select>
+        <!-- Entrada da quantidade de duplas -->
+         <div>
+            <label for="quantidadeDuplas" class="text-lg font-bold text-blue-500">Digite a quantidade de duplas participantes:</label>
+         </div>
+        <input id="quantidadeDuplas" type="number" 
+            class="w-full h-12 p-2 border rounded mb-4 text-center" 
+            placeholder="quantidade">
+        <button id="gerarDuplas"
+            class="w-full bg-blue-700 hover:bg-blue-500 text-white px-4 py-2 rounded flex items-center justify-center">
+            Definir nomes das duplas
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </button>
+
+        <!-- Área onde os inputs serão inseridos -->
+        <div id="inputsContainer" class="mt-4"></div>
+
+        <!-- Botão para sortear as duplas -->
+        <button id="sortearDupla" 
+            class="hidden w-full bg-green-700 hover:bg-green-500 text-white px-4 py-2 rounded mt-4 hover:bg-green-600 flex items-center justify-center">
+            SORTEAR DUPLA 1
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </button>
+
+        
+        <div id="sorteioRapido" class="text-center text-lg font-bold my-4"></div>
+
+
+        <!-- Lista das duplas sorteadas -->
+        <ul id="listaDuplas" class="mt-4 text-left"></ul>
+        <button id="novoSorteio" class="hidden bg-red-500 text-white p-2 rounded mt-4">Fazer novo sorteio</button>
+
+    </div>
+
+    
+    <div id="sorteioDisplay" class="text-xl font-bold text-blue-500 mb-4"></div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
